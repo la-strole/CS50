@@ -8,7 +8,8 @@ int main(void)
     do
     {
         permutations = 0;
-        for (int i=0; i < 9; i++)
+        int sub = 0;
+        for (int i=0; i < 9 - sub; i++)
         {
             if(unsorted_list[i] > unsorted_list[i+1])
             {
@@ -18,6 +19,7 @@ int main(void)
                 permutations += 1;
             }
         }
+        sub ++;
     }
     while (permutations != 0);
    
